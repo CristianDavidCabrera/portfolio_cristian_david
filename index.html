@@ -6,8 +6,13 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body>
-    <header>
+  <body class="dark-mode">
+    <header class="dark-mode">
+        <div class="social-icons">
+            <a href="#"><img src="assets/icons/github.png" alt="GitHub" /></a>
+            <a href="#"><img src="assets/icons/linkedin.png" alt="LinkedIn" /></a>
+            <a href="#"><img src="assets/icons/twitter.png" alt="Twitter" /></a>
+          </div>
       <h1>Cristian David</h1>
       <nav>
         <ul>
@@ -16,9 +21,13 @@
           <li><a href="#contact">Contacto</a></li>
         </ul>
       </nav>
+    <div class="top-buttons">
+        <button id="dark-mode-toggle">🌙</button>
+        <button id="toggle-language">🌍</button>
+      </div>
     </header>
 
-    <section id="about">
+    <section id="about" class="dark-mode">
       <h2>Sobre Mí</h2>
       <p>
         Hola!! mi nombre es <strong>Cristian Cabrera</strong> y soy
@@ -35,7 +44,7 @@
       </p>
     </section>
 
-    <section>
+    <section class="dark-mode">
       <h2>Proyectos</h2>
       <div id="projects">
         <div class="project" class="">
@@ -44,9 +53,9 @@
             src="assets/images/space_force_deluxe.png"
             alt="imagen representativa"
           />
-          <p>Descripción:</p>
+          <p><strong>Descripción</strong></p>
           <p>Videojuego de naves tipo Space Invaders o Galaga.</p>
-          <p>Tecnologías</p>
+          <p><Strong>Tecnologías</Strong></p>
           <p>JavaScript Vanila, CSS3, HTML5.</p>
         </div>
         <div class="project">
@@ -55,27 +64,29 @@
             src="assets/images/tic_tac_toe.png"
             alt="imagen representativa"
           />
+          <p><strong>Descripción</strong></p>
           <p>Videojuego del famoso Tic-tac-toe (Tres en raya)</p>
+          <p><strong>Tecnologías</strong></p>
           <p>HTML5, CSS3, JSX, JavaScript, REACT.</p>
         </div>
         <div class="project">
           <h3>El Terrero</h3>
           <img src="assets/images/el_terrero.png" alt="imagen representativa" />
+          <p><strong>Descripción</strong></p>
           <p>
-            Web especializada en el seguimiento de la Lucha Canaria. Da a
-            conocer el minuto y resultado de las luchadas. Permite que los
-            clubes de lucha puedan gestiónar a todos sus equipos.
+            Web especializada en el seguimiento de la Lucha Canaria.
           </p>
+          <p><strong>Tecnologías</strong></p>
           <p>MySQL, PHP con Symfony, Twig y JavaScript.</p>
         </div>
         <div class="project">
           <h3>PharmacIA</h3>
           <img src="assets/images/pharmacIA_.png" alt="imagen representativa" />
+          <p><strong>Descripción</strong></p>
           <p>
-            Ecommerce con IA que automatiza la gestión de tu stock y los precios
-            y descuentos a aplicar para minimizar pérdidas y evitar el
-            desperdicio de productos de parafarmácia, nutrición y cosmética.
+            Ecommerce con IA que automatiza y optomiza la gestión de tu stock.
           </p>
+          <p><strong>Tecnologías</strong></p>
           <p>MySQL, PHP con Symfony y Prestashop.</p>
         </div>
 
@@ -89,7 +100,7 @@
       </div>
     </section>
 
-    <section id="contact">
+    <section id="contact"class="dark-mode">
       <h2>Contacto</h2>
       <p>
         Puedes contactarme en:
@@ -99,7 +110,7 @@
       </p>
     </section>
 
-    <footer>
+    <footer class="dark-mode">
       <p>
         &copy; 2025 Cristian David Cabrera Cabrera. Todos los derechos
         reservados.
