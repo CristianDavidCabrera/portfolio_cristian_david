@@ -16,9 +16,9 @@
       <h1>Cristian David</h1>
       <nav>
         <ul>
-          <li><a href="#about">Sobre Mí</a></li>
-          <li><a href="#projects">Proyectos</a></li>
-          <li><a href="#contact">Contacto</a></li>
+          <li><a href="#about" id="about-nav">Sobre Mí</a></li>
+          <li><a href="#projects" id="projects-nav">Proyectos</a></li>
+          <li><a href="#contact" id="contact-nav">Contacto</a></li>
         </ul>
       </nav>
     <div class="top-buttons">
@@ -28,16 +28,16 @@
     </header>
 
     <section id="about" class="dark-mode">
-      <h2>Sobre Mí</h2>
-      <p>
+      <h2 id="about-title">Sobre Mí</h2>
+      <p id="about-text-1">
         Hola!! mi nombre es <strong>Cristian Cabrera</strong> y soy
         desarrollador web y amante de la tecnología.
       </p>
-      <p>
+      <p id="about-text-2">
         Soy una persona autosuficiente, responsable y comprometida que valora
         profundamente el trabajo en equipo y un ambiente laboral positivo.
       </p>
-      <p>
+      <p id="about-text-3">
         Siempre estoy buscando la manera de mejorar y de aprender cosas nuevas.
         Abordando cada desafío profesional con una actitud positiva, proactiva y
         resolutiva.
@@ -45,18 +45,18 @@
     </section>
 
     <section class="dark-mode">
-      <h2>Proyectos</h2>
+      <h2 id="projects-title">Proyectos</h2>
       <div id="projects">
         <div class="project" class="">
-          <h3>Space Force Deluxe</h3>
+          <h3 id="project-title-1">Space Force Deluxe</h3>
           <img
             src="assets/images/space_force_deluxe.png"
             alt="imagen representativa"
           />
-          <p><strong>Descripción</strong></p>
-          <p>Videojuego de naves tipo Space Invaders o Galaga.</p>
-          <p><Strong>Tecnologías</Strong></p>
-          <p>JavaScript Vanila, CSS3, HTML5.</p>
+          <p id="project-description-1"><strong>Descripción</strong></p>
+          <p id="project-description-text-1">Videojuego de naves tipo Space Invaders o Galaga.</p>
+          <p id="project-tech-1"><Strong>Tecnologías</Strong></p>
+          <p id="project-tech-text-1">JavaScript Vanila, CSS3, HTML5.</p>
         </div>
         <div class="project">
           <h3>Tic-tac-toe</h3>
@@ -64,45 +64,37 @@
             src="assets/images/tic_tac_toe.png"
             alt="imagen representativa"
           />
-          <p><strong>Descripción</strong></p>
-          <p>Videojuego del famoso Tic-tac-toe (Tres en raya)</p>
-          <p><strong>Tecnologías</strong></p>
-          <p>HTML5, CSS3, JSX, JavaScript, REACT.</p>
+          <p id="project-description-2"><strong>Descripción</strong></p>
+          <p id="project-description-text-2">Videojuego del famoso Tic-tac-toe (Tres en raya)</p>
+          <p id="project-tech-2"><strong>Tecnologías</strong></p>
+          <p id="project-tech-text-2">HTML5, CSS3, JSX, JavaScript, REACT.</p>
         </div>
         <div class="project">
           <h3>El Terrero</h3>
           <img src="assets/images/el_terrero.png" alt="imagen representativa" />
-          <p><strong>Descripción</strong></p>
-          <p>
+          <p id="project-description-3"><strong>Descripción</strong></p>
+          <p id="project-description-text-3">
             Web especializada en el seguimiento de la Lucha Canaria.
           </p>
-          <p><strong>Tecnologías</strong></p>
-          <p>MySQL, PHP con Symfony, Twig y JavaScript.</p>
+          <p id="project-tech-3"><strong>Tecnologías</strong></p>
+          <p id="project-tech-text-3">MySQL, PHP con Symfony, Twig y JavaScript.</p>
         </div>
         <div class="project">
           <h3>PharmacIA</h3>
           <img src="assets/images/pharmacIA_.png" alt="imagen representativa" />
-          <p><strong>Descripción</strong></p>
-          <p>
+          <p id="project-description-4"><strong>Descripción</strong></p>
+          <p id="project-description-text-4">
             Ecommerce con IA que automatiza y optomiza la gestión de tu stock.
           </p>
-          <p><strong>Tecnologías</strong></p>
-          <p>MySQL, PHP con Symfony y Prestashop.</p>
+          <p id="project-tech-4"><strong>Tecnologías</strong></p>
+          <p id="project-tech-text-4">MySQL, PHP con Symfony y Prestashop.</p>
         </div>
-
-        <!-- Estructura de los proyectos a añadir -->
-        <!--  <div class="project">
-        <h3>Proyecto</h3>
-        <img src="" alt="imagen representativa">
-        <p>Descripción del proyecto.</p>
-        <p>tecnologías utilizadas</p>
-      </div> -->
       </div>
     </section>
 
     <section id="contact"class="dark-mode">
-      <h2>Contacto</h2>
-      <p>
+      <h2 id="contact-title">Contacto</h2>
+      <p id="contact-text">
         Puedes contactarme en:
         <a href="mailto:cristiancabrera.1985@gmail.com"
           >cristiancabrera.1985@gmail.com</a
@@ -111,11 +103,12 @@
     </section>
 
     <footer class="dark-mode">
-      <p>
+      <p id="footer-text">
         &copy; 2025 Cristian David Cabrera Cabrera. Todos los derechos
         reservados.
       </p>
     </footer>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/languages.js"></script>
   </body>
 </html>
