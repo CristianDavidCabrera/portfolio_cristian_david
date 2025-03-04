@@ -4,13 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body class="dark-mode">
     <header class="dark-mode">
       <div class="social-icons">
-        <a href="#"><img src="assets/icons/github.png" alt="GitHub" /></a>
-        <a href="#"><img src="assets/icons/linkedin.png" alt="LinkedIn" /></a>
+        <a href="https://github.com/CristianDavidCabrera" target="_blank"
+          ><img
+            src="assets/icons/social_media/github_white_icon.svg"
+            alt="GitHub"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/cristiandavidcabrera1985/"
+          target="_blank"
+          ><img
+            src="assets/icons/social_media/linkedin_white_icon.svg"
+            alt="LinkedIn"
+        /></a>
       </div>
       <nav>
         <ul>
@@ -21,6 +37,7 @@
       </nav>
       <div class="top-buttons">
         <button id="dark-mode-toggle">🌙</button>
+        <!-- <button id="dark-mode-toggle"><img src="assets/icons/dark-mode-icon.svg"></img>Dark mode</button> -->
         <button id="toggle-language">EN / ES</button>
       </div>
     </header>
@@ -28,7 +45,7 @@
       <h2 id="about-title">Sobre Mí</h2>
       <p id="about-text-1">
         Hola!! mi nombre es <strong>Cristian Cabrera</strong> y soy
-        desarrollador web y amante de la tecnología.
+        <em>Desarrollador Web Fullstack</em> y amante de la tecnología.
       </p>
       <p id="about-text-2">
         Soy una persona autosuficiente, responsable y comprometida que valora
@@ -47,7 +64,7 @@
           <img src="assets/icons/education/logo_ulpgc.svg" alt="Logo ULPGC" />
           <p id="education-text-1">ULPGC</p>
           <p id="education-description-1">
-            Ingeniería Técnica en Telecomunicaciones, especialidad de Telemática
+            Ingeniería Técnica en Telecomunicaciones
           </p>
         </div>
         <div class="education-item">
@@ -82,6 +99,40 @@
         </div>
       </div>
     </section>
+
+    <section class="skills-section">
+      <h2 id="skill-title">Habilidades</h2>
+      <div class="slider">
+        <div class="slide-track">
+          <img src="assets/icons/skills/html_icon.svg" alt="HTML icon" />
+          <img src="assets/icons/skills/js_icon.svg" alt="JavaScript icon" />
+          <img src="assets/icons/skills/css3_icon.svg" alt="CSS icon" />
+          <img src="assets/icons/skills/MySQL_icon.svg" alt="MySQL icon" />
+          <img src="assets/icons/skills/php_icon.svg" alt="PHP icon" />
+          <img src="assets/icons/skills/symfony_icon.svg" alt="Symfony icon" />
+          <img src="assets/icons/skills/react_icon.svg" alt="React icon" />
+          <img
+            src="assets/icons/skills/tailwind_icon.svg"
+            alt="Tailwind icon"
+          />
+          <img src="assets/icons/skills/git_icon.svg" alt="Git icon" />
+          <img
+            src="assets/icons/skills/prestashop_icon.svg"
+            alt="PrestaShop icon"
+          />
+          <img
+            src="assets/icons/skills/wordpres_icon.svg"
+            alt="WordPress icon"
+          />
+          <img
+            src="assets/icons/skills/woocommerce_icon.svg"
+            alt="WooCommerce icon"
+          />
+          <img src="assets/icons/skills/magento_icon.svg" alt="Magento icon" />
+        </div>
+      </div>
+    </section>
+
     <section class="dark-mode">
       <h2 id="projects-title">Proyectos</h2>
       <div id="projects">
@@ -152,13 +203,13 @@
         reservados.
       </p>
     </footer>
-
-    <!-- Botón de subir -->
+    
     <button id="scroll-top-btn" class="scroll-top-btn">↑</button>
 
     <script src="assets/js/scrollTop.js"></script>
     <script src="assets/js/darkmode.js"></script>
     <script src="assets/js/languages.js"></script>
     <script src="assets/js/text.js"></script>
+    <script src="assets/js/sliderTrack.js" defer></script>
   </body>
 </html>

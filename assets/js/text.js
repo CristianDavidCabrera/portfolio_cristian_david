@@ -5,7 +5,7 @@ const translations = {
     "contact-nav": "Contacto",
     "about-title": "Sobre Mí",
     "about-text-1":
-      "Hola!! mi nombre es <strong>Cristian Cabrera</strong> y soy desarrollador web y amante de la tecnología.",
+      "Hola!! mi nombre es <strong>Cristian Cabrera</strong> y soy <em>Desarrollador Web Fullstack</em> y amante de la tecnología.",
     "about-text-2":
       "Soy una persona autosuficiente, responsable y comprometida que valora profundamente el trabajo en equipo y un ambiente laboral positivo.",
     "about-text-3":
@@ -13,7 +13,7 @@ const translations = {
     "education-title": "Educación",
     "education-text-1": "ULPGC",
     "education-description-1":
-      "Ingeniería Técnica en Telecomunicaciones, especialidad de Telemática",
+      "Ingeniería Técnica en Telecomunicaciones",
     "education-text-2": "REBOOT ACADEMY",
     "education-description-2": "Bootcamp Desarrollador Web Fullstack",
     "education-text-3": "20-HEROES TALENT",
@@ -22,6 +22,7 @@ const translations = {
     "education-description-4": "Certified Tester, Foundation Level",
     "education-text-5": "CCNA",
     "education-description-5": "Cisco Certified Network Associate",
+    "skill-title":"Habilidades",
     "projects-title": "Proyectos",
     "project-description-1": "<strong>Descripción</strong>",
     "project-description-text-1":
@@ -54,7 +55,7 @@ const translations = {
     "contact-nav": "Contact",
     "about-title": "About Me",
     "about-text-1":
-      "Hello!! My name is <strong>Cristian Cabrera</strong> and I am a web developer and technology lover.",
+      "Hello!! My name is <strong>Cristian Cabrera</strong> and I am a <em>Fullstack Web Developer</em> and a technology enthusiast.",
     "about-text-2":
       "I am a self-sufficient, responsible, and committed person who deeply values teamwork and a positive work environment.",
     "about-text-3":
@@ -62,7 +63,7 @@ const translations = {
     "education-title": "Education",
     "education-text-1": "ULPGC",
     "education-description-1":
-      "Technical Engineering in Telecommunications, specializing in Telematics",
+      "Technical Engineering in Telecommunications",
     "education-text-2": "REBOOT ACADEMY",
     "education-description-2": "Fullstack Web Developer Bootcamp",
     "education-text-3": "20-HEROES TALENT",
@@ -71,6 +72,7 @@ const translations = {
     "education-description-4": "Certified Tester, Foundation Level",
     "education-text-5": "CCNA",
     "education-description-5": "Cisco Certified Network Associate",
+    "skill-title":"Skills",
     "projects-title": "Projects",
     "project-description-1": "<strong>Description</strong>",
     "project-description-text-1":
