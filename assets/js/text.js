@@ -71,7 +71,6 @@ const translations = {
     "education-description-4": "Certified Tester, Foundation Level",
     "education-text-5": "CCNA",
     "education-description-5": "Cisco Certified Network Associate",
-
     "projects-title": "Projects",
     "project-description-1": "<strong>Description</strong>",
     "project-description-text-1":
@@ -92,8 +91,6 @@ const translations = {
       "Ecommerce with AI that automates and optimizes stock management.",
     "project-tech-4": "<strong>Technologies</strong>",
     "project-tech-text-4": "MySQL, PHP with Symfony, and Prestashop.",
-
-    "project-tech-text-4": "",
     "contact-title": "Contact",
     "contact-text":
       "You can contact me at <a href='mailto:cristiancabrera.1985@gmail.com'>cristiancabrera.1985@gmail.com</a>",
