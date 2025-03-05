@@ -333,6 +333,11 @@ section h2 {
   font-weight: bolder;
 }
 
+.mobile-first, .mobile-first-nav {
+  display: none;
+}
+
+
 /* Estilo del botón de subir */
 .scroll-top-btn {
   position: fixed;
@@ -356,37 +361,180 @@ section h2 {
   color: black;
 }
 
-/* Estilo responsivo */
-@media (max-width: 768px) {
-  header nav ul {
+/* Mobile Responsiveness */
+@media only screen and (max-width: 768px) {
+  /* Header */
+  header {
     flex-direction: column;
+    padding: 20px;
   }
 
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  /* About section */
+  #about {
+    padding: 40px 10px;
+  }
+
+  #about-title {
+    font-size: 1.8rem;
+  }
+
+  #about-text-1,
+  #about-text-2,
+  #about-text-3 {
+    font-size: 1rem;
+  }
+
+  /* Education section */
+  .education-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  /* Skills section */
+  #skill-title {
+    font-size: 1.8rem;
+  }
+
+  .slider {
+    overflow: visible;
+  }
+
+  .slide-track img {
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+  }
+
+  /* Projects section */
   .project {
-    width: 100%;
-    max-width: 400px;
+    padding: 15px;
   }
 
   .project h3 {
-    font-size: 1.3em;
+    font-size: 1.5rem;
   }
 
-  section h2 {
-    font-size: 1.8em;
+  .project img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Footer */
+  footer.main-footer {
+    padding: 20px;
   }
 
   .main-footer__upper {
     flex-direction: column;
-    text-align: center;
+    align-items: center;
   }
 
   .main-footer__row-1,
   .main-footer__row-2 {
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
   }
 
   .main-footer__social-cont {
+    gap: 10px;
     justify-content: center;
+  }
+
+  .main-footer__short-desc {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile-first design for very small screens */
+@media only screen and (max-width: 480px) {
+  /* Header */
+  header {
+    padding: 15px;
+  }
+
+  nav ul {
+    gap: 8px;
+  }
+  .header__logo-img-cont,
+  #contact-nav,
+  #about-text-2,
+  #about-text-3 {
+    display: none;
+  }
+
+section {
+  margin:2rem 2rem;
+  padding: 2rem;
+}
+
+  /* About section */
+  #about {
+    padding: 0.5rem;
+  }
+
+  #about-title {
+    font-size: 1.6rem;
+  }
+
+  #about-text-1,
+  #about-text-2,
+  #about-text-3 {
+    font-size: 0.9rem;
+  }
+
+  /* Education section */
+  #about-title,
+  #education-title,
+  #skill-title,
+  #projects-title,
+  #contact-title {
+    border: 1px solid white;
+  }
+
+  .education-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* Projects section */
+  .project {
+    padding: 10px;
+    margin-top: 1rem;
+  }
+
+  .project h3 {
+    font-size: 1.3rem;
+  }
+
+  #contact {
+    display: none;
+  }
+
+  .mobile-first, .mobile-first-nav {
+    display: flex;
+  }
+
+  .mobile-first a {
+    display: flex;
+    color: #3498db;
+    text-decoration: none;
+  }
+
+  .mobile-first a:hover {
+    color: orange;
+  }
+  /* Footer */
+  .main-footer__short-desc {
+    font-size: 0.9rem;
+  }
+
+  #scroll-top-btn {
+    font-size: 1.3rem;
   }
 }
