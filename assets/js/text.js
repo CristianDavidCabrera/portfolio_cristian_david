@@ -12,8 +12,7 @@ const translations = {
       "Siempre estoy buscando la manera de mejorar y de aprender cosas nuevas. Abordando cada desafío profesional con una actitud positiva, proactiva y resolutiva.",
     "education-title": "Educación",
     "education-text-1": "ULPGC",
-    "education-description-1":
-      "Ingeniería Técnica en Telecomunicaciones",
+    "education-description-1": "Ingeniería Técnica en Telecomunicaciones",
     "education-text-2": "REBOOT ACADEMY",
     "education-description-2": "Bootcamp Desarrollador Web Fullstack",
     "education-text-3": "20-HEROES TALENT",
@@ -22,7 +21,7 @@ const translations = {
     "education-description-4": "Certified Tester, Foundation Level",
     "education-text-5": "CCNA",
     "education-description-5": "Cisco Certified Network Associate",
-    "skill-title":"Habilidades",
+    "skill-title": "Habilidades",
     "projects-title": "Proyectos",
     "project-description-1": "<strong>Descripción</strong>",
     "project-description-text-1":
@@ -45,9 +44,11 @@ const translations = {
     "project-tech-text-4": "MySQL, PHP con Symfony y Prestashop.",
     "contact-title": "Contacto",
     "contact-text":
-      "Puedes contactarme en <a href='mailto:cristiancabrera.1985@gmail.com'>cristiancabrera.1985@gmail.com</a>",
-    "footer-text":
-      "&copy; 2025 Cristian David Cabrera Cabrera. Todos los derechos reservados.",
+      "Estoy abierto a oportunidades laborales donde pueda contribuir, aprender y crecer. Si tienes una buena oportunidad que coincida con mis habilidades y experiencia, no dudes en contactarme. <a href='mailto:cristiancabrera.1985@gmail.com'>cristiancabrera.1985@gmail.com</a>",
+    "footer-upper-text":
+      "Profesional comprometido, desarrollador apasionado, siempre con la mejor actitud.",
+    "footer-lower-text":
+      "&copy; 2025. Hecho por <span>Cristian David Cabrera Cabrera</span>. Todos los derechos reservados.",
   },
   en: {
     "about-nav": "About Me",
@@ -62,8 +63,7 @@ const translations = {
       "I am always looking for ways to improve and learn new things. Approaching each professional challenge with a positive, proactive and decisive attitude.",
     "education-title": "Education",
     "education-text-1": "ULPGC",
-    "education-description-1":
-      "Technical Engineering in Telecommunications",
+    "education-description-1": "Technical Engineering in Telecommunications",
     "education-text-2": "REBOOT ACADEMY",
     "education-description-2": "Fullstack Web Developer Bootcamp",
     "education-text-3": "20-HEROES TALENT",
@@ -72,7 +72,7 @@ const translations = {
     "education-description-4": "Certified Tester, Foundation Level",
     "education-text-5": "CCNA",
     "education-description-5": "Cisco Certified Network Associate",
-    "skill-title":"Skills",
+    "skill-title": "Skills",
     "projects-title": "Projects",
     "project-description-1": "<strong>Description</strong>",
     "project-description-text-1":
@@ -95,8 +95,10 @@ const translations = {
     "project-tech-text-4": "MySQL, PHP with Symfony, and Prestashop.",
     "contact-title": "Contact",
     "contact-text":
-      "You can contact me at <a href='mailto:cristiancabrera.1985@gmail.com'>cristiancabrera.1985@gmail.com</a>",
-    "footer-text":
-      "&copy; 2025 Cristian David Cabrera Cabrera. All rights reserved.",
+      "I am open to job opportunities where I can contribute, learn, and grow. If you have a great opportunity that matches my skills and experience, don't hesitate to contact me. <a href='mailto:cristiancabrera.1985@gmail.com'>cristiancabrera.1985@gmail.com</a>",
+    "footer-upper-text":
+      "Committed professional, passionate developer, always with the best attitude.",
+    "footer-lower-text":
+      "&copy; 2025. Made by <span>Cristian David Cabrera Cabrera</span>. All rights reserved.",
   },
 };

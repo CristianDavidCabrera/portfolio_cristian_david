@@ -12,22 +12,19 @@
     />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body class="dark-mode">
-    <header class="dark-mode">
-      <div class="social-icons">
-        <a href="https://github.com/CristianDavidCabrera" target="_blank"
-          ><img
-            src="assets/icons/social_media/github_white_icon.svg"
-            alt="GitHub"
-        /></a>
-        <a
-          href="https://www.linkedin.com/in/cristiandavidcabrera1985/"
-          target="_blank"
-          ><img
-            src="assets/icons/social_media/linkedin_white_icon.svg"
-            alt="LinkedIn"
-        /></a>
+  <body>
+    <header>
+      <div class="header__logo-container">
+        <div class="header__logo-img-cont">
+          <img
+            src="assets/images/foto_perfil.jpeg"
+            alt="Cristian Cabrera Logo Image"
+            class="header__logo-img"
+          />
+        </div>
+        <span class="header__logo-sub">Cristian David</span>
       </div>
+
       <nav>
         <ul>
           <li><a href="#about" id="about-nav">Sobre Mí</a></li>
@@ -36,12 +33,11 @@
         </ul>
       </nav>
       <div class="top-buttons">
-        <button id="dark-mode-toggle">🌙</button>
-        <!-- <button id="dark-mode-toggle"><img src="assets/icons/dark-mode-icon.svg"></img>Dark mode</button> -->
         <button id="toggle-language">EN / ES</button>
+        <!-- <button id="dark-mode-toggle">🌙</button> -->
       </div>
     </header>
-    <section id="about" class="dark-mode">
+    <section id="about">
       <h2 id="about-title">Sobre Mí</h2>
       <p id="about-text-1">
         Hola!! mi nombre es <strong>Cristian Cabrera</strong> y soy
@@ -133,7 +129,7 @@
       </div>
     </section>
 
-    <section class="dark-mode">
+    <section>
       <h2 id="projects-title">Proyectos</h2>
       <div id="projects">
         <div class="project" class="">
@@ -187,23 +183,65 @@
       </div>
     </section>
 
-    <section id="contact" class="dark-mode">
+    <section id="contact">
       <h2 id="contact-title">Contacto</h2>
       <p id="contact-text">
-        Puedes contactarme en:
+        Estoy abierto a oportunidades laborales donde pueda contribuir, aprender
+        y crecer. Si tienes una buena oportunidad que coincida con mis
+        habilidades y experiencia, no dudes en contactarme.
         <a href="mailto:cristiancabrera.1985@gmail.com"
           >cristiancabrera.1985@gmail.com</a
         >
       </p>
     </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-2">
+            <h2>
+              <span>Social Media</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a
+                href="https://github.com/CristianDavidCabrera"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="assets/icons/social_media/github_white_icon.svg"
+                  alt="Cristian David GitHub Profile"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/cristiandavidcabrera1985/"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="assets/icons/social_media/linkedin_white_icon.svg"
+                  alt="Cristian David LinkedIn Profile"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm text-lt">Cristian David</h2>
+            <p id="footer-upper-text" class="main-footer__short-desc">
+              "Profesional comprometido, desarrollador apasionado, siempre con
+              la mejor actitud."
+            </p>
+          </div>
+        </div>
 
-    <footer class="dark-mode">
-      <p id="footer-text">
-        &copy; 2025 Cristian David Cabrera Cabrera. Todos los derechos
-        reservados.
-      </p>
+        <div id="footer-lower-text" class="main-footer__lower">
+          &copy; 2025. Hecho por <span>Cristian David Cabrera Cabrera</span>.
+          Todos los derechos reservados.
+        </div>
+      </div>
     </footer>
-    
+
     <button id="scroll-top-btn" class="scroll-top-btn">↑</button>
 
     <script src="assets/js/scrollTop.js"></script>
