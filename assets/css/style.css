@@ -11,7 +11,6 @@ body {
   line-height: 1.6;
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
-  
   --tw-text-opacity: 1;
   color: rgb(148 163 184 / var(--tw-text-opacity));
   position: relative;
@@ -21,7 +20,7 @@ body {
 /* Estilo del header */
 header {
   display: flex;
-  justify-content:space-between ;
+  justify-content: space-between;
   align-items: center;
   background-color: #2c3e50;
   color: white;
@@ -50,47 +49,9 @@ header {
   color: white;
 }
 
-/* Redes sociales en la esquina superior izquierda */
-/* .social-icons {
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.social-icons a {
-  display: inline-block;
-  transition: transform 0.3s ease;
-}
-
-.social-icons a:hover {
-  transform: scale(1.1);
-} */
-
-/* Botones de idioma y dark mode junto al nav*/
-.top-buttons {
-  display: flex;
-  gap: 15px;
-}
-
-.top-buttons button {
-  --tw-bg-opacity: 1;
-  color: rgb(15 23 42 / var(--tw-bg-opacity));
-  border: none;
-  padding: 8px 12px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.top-buttons button:hover {
-  background-color: orange;
-}
-
 /* Estilo del nav*/
-
-header nav {
-margin-left: 52rem;
+nav {
+  margin-right: 2rem;
 }
 nav ul {
   display: flex;
@@ -394,35 +355,6 @@ section h2 {
   background-color: orange;
   color: black;
 }
-
-/* Modo oscuro */
-/* .dark-mode {
-  background-color: #1e272e;
-  color: white;
-}
-
-.dark-mode section {
-  background-color: #2c3e50;
-  color: white;
-}
-.dark-mode h2 {
-  color: white;
-}
-
-.dark-mode header,
-.dark-mode footer {
-  background-color: #1e272e;
-}
-
-.dark-mode .project {
-  color: #1e272e;
-}
-.dark-mode .project img {
-  border: 1px solid black;
-}
-.dark-mode .top-buttons button {
-  background-color: #555;
-} */
 
 /* Estilo responsivo */
 @media (max-width: 768px) {
