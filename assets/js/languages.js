@@ -14,3 +14,12 @@ document
     document.documentElement.lang = currentLang;
     changeLanguage(currentLang);
   });
+
+
+  document
+  .getElementById("toggle-language-tablet")
+  .addEventListener("click", function () {
+    let currentLangTablet = document.documentElement.lang === "es" ? "en" : "es";
+    document.documentElement.lang = currentLangTablet;
+    changeLanguage(currentLangTablet);
+  });

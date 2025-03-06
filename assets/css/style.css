@@ -152,7 +152,10 @@ section h2 {
   color: white;
   margin-bottom: 2rem;
 }
-#about p {
+#about {
+  margin: 5rem auto;
+
+  width: 60%;
   font-size: 1.8rem;
   text-align: center;
 }
@@ -596,7 +599,7 @@ section h2 {
   }
 
   .hamburger-icon {
-    font-size: 30px;
+    visibility: hidden;
   }
   nav ul {
     gap: 8px;
