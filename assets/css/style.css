@@ -271,6 +271,7 @@ section h2 {
   color: #fff;
   padding: 5rem 1rem;
   font-family: Arial, sans-serif;
+  font-size: 1.8rem;
 }
 
 .main-container {
@@ -305,8 +306,8 @@ section h2 {
 }
 
 .main-footer__icon {
-  width: 32px;
-  height: 32px;
+  width: 3rem;
+  height: 3rem;
   transition: transform 0.3s ease-in-out, opacity 0.3s;
 }
 
@@ -316,14 +317,14 @@ section h2 {
 }
 
 .main-footer__short-desc {
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 1.5;
   opacity: 0.8;
 }
 
 .main-footer__lower {
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   margin-top: 1.5rem;
   opacity: 0.7;
 }
@@ -512,6 +513,13 @@ section {
     font-size: 1.3rem;
   }
 
+  .project img {
+    width: 100%;
+    height: 150px;
+}
+
+
+
   #contact {
     display: none;
   }
@@ -531,10 +539,25 @@ section {
   }
   /* Footer */
   .main-footer__short-desc {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   #scroll-top-btn {
     font-size: 1.3rem;
+  }
+
+  .main-footer__lower,
+  .main-footer .main-container {
+    font-size: 0.9rem;
+  }
+  
+  .main-footer__icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .main-footer__row-1 {
+    margin: 1rem 2rem;
+    padding: 1rem;
   }
 }
