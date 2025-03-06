@@ -23,3 +23,11 @@ document
     document.documentElement.lang = currentLangTablet;
     changeLanguage(currentLangTablet);
   });
+
+  document
+  .getElementById("toggle-language-mobil")
+  .addEventListener("click", function () {
+    let currentLangMobil = document.documentElement.lang === "es" ? "en" : "es";
+    document.documentElement.lang = currentLangMobil;
+    changeLanguage(currentLangMobil);
+  });

@@ -33,6 +33,7 @@ header {
 .header__logo-container {
   display: flex;
   align-items: center;
+  margin: 1.5rem;
 }
 
 .header__logo-img-cont {
@@ -405,7 +406,6 @@ section h2 {
   position: fixed;
   bottom: 20px;
   right: 20px;
-
   --tw-bg-opacity: 1;
   color: rgb(15 23 42 / var(--tw-bg-opacity));
   color: black;
@@ -422,6 +422,71 @@ section h2 {
   background-color: orange;
   color: black;
 }
+
+
+
+
+/* Oculta el acordeón en tablets y escritorio */
+@media (min-width: 768px) {
+  .accordion-menu {
+    display: none;
+  }
+}
+
+.accordion-menu {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.accordion-toggle {
+  --tw-bg-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-bg-opacity));
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.accordion-content {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  --tw-bg-opacity: 1;
+    background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+
+
+.accordion-content li {
+  padding: 10px;
+  border-bottom: 1px solid #666;
+}
+
+.accordion-content li a {
+  --tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+  text-decoration: none;
+  display: block;
+}
+
+.accordion-menu button {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+
+
 
 /* ------------------------------------ */
 /*              TABLET                  */
@@ -616,8 +681,12 @@ section h2 {
     margin: 2rem 1rem;
   }
 
+  section h2 {
+    font-size: 1.8rem;
+  }
   #about-title {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    padding: 0rem 1rem ;
   }
 
   #about-text-1 {
