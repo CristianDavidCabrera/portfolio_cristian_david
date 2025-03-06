@@ -1,3 +1,7 @@
+/* ------------------------------------ */
+/*              DESKTOP                 */
+/* ------------------------------------ */
+
 /* Reseteo de márgenes y padding predeterminados */
 * {
   margin: 0;
@@ -14,7 +18,6 @@ body {
   --tw-text-opacity: 1;
   color: rgb(148 163 184 / var(--tw-text-opacity));
   position: relative;
-  /*  padding: 20px; */
 }
 
 /* Estilo del header */
@@ -72,6 +75,62 @@ nav ul li a {
 
 nav ul li a:hover {
   color: orange;
+}
+
+/* Estilos para el sidebar y el botón de hamburguesa */
+
+/* Estilos del sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  transition: left 0.3s ease;
+  padding-top: 50px;
+  z-index: 10;
+}
+
+#sidebar.open {
+  left: 0;
+}
+
+.sidebar-toggle {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon {
+  visibility: hidden;
+  font-size: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+.sidebar ul li a:hover {
+  background-color: #555;
 }
 
 /* Estilo de las secciones */
@@ -168,8 +227,13 @@ section h2 {
   color: white;
   padding: 20px 40px;
 }
+/* Estilo de los iconos */
+.slide-track img {
+  width: 50px;
+  height: auto;
+}
 
-/* Carrusell o slider de Skill icons */
+/* Carrusell o slider de habilidades */
 .slider {
   width: 100%;
   overflow: hidden;
@@ -177,15 +241,9 @@ section h2 {
 
 .slide-track {
   display: flex;
-  gap: 75px;
+  gap: 80px;
   width: max-content;
-  animation: scroll 20s linear infinite;
-}
-
-/* Estilo de los iconos */
-.slide-track img {
-  width: 50px;
-  height: auto;
+  animation: scroll 30s linear infinite;
 }
 
 /* Animación infinita*/
@@ -271,7 +329,7 @@ section h2 {
   color: #fff;
   padding: 5rem 1rem;
   font-family: Arial, sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
 }
 
 .main-container {
@@ -334,10 +392,10 @@ section h2 {
   font-weight: bolder;
 }
 
-.mobile-first, .mobile-first-nav {
+.mobile-first,
+.mobile-first-nav {
   display: none;
 }
-
 
 /* Estilo del botón de subir */
 .scroll-top-btn {
@@ -362,7 +420,10 @@ section h2 {
   color: black;
 }
 
-/* Mobile Responsiveness */
+/* ------------------------------------ */
+/*              TABLET                  */
+/* ------------------------------------ */
+
 @media only screen and (max-width: 768px) {
   /* Header */
   header {
@@ -391,6 +452,18 @@ section h2 {
     font-size: 1rem;
   }
 
+  #about p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  #about p strong {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  section {
+    margin: 2rem;
+    padding: 1rem;
+  }
   /* Education section */
   .education-container {
     grid-template-columns: 1fr 1fr;
@@ -423,7 +496,14 @@ section h2 {
 
   .project img {
     width: 100%;
-    height: auto;
+    height: 150px;
+  }
+
+  #contact-text {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2rem;
   }
 
   /* Footer */
@@ -450,18 +530,78 @@ section h2 {
   .main-footer__short-desc {
     font-size: 1rem;
   }
+
+  nav,
+  #contact-nav,
+  #about-text-2,
+  #about-text-3 {
+    display: none;
+  }
+
+  .hamburger-icon {
+    visibility: visible;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+  /* Carrusell o slider de Skill icons */
+  .slider {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .slide-track {
+    display: flex;
+    gap: 50px;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+  }
+
+  /* Estilo de los iconos */
+  .slide-track img {
+    width: 50px;
+    height: auto;
+  }
+
+  /* Animación infinita*/
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
 }
 
-/* Mobile-first design for very small screens */
+/* ------------------------------------ */
+/*              MOBILE                  */
+/* ------------------------------------ */
+
 @media only screen and (max-width: 480px) {
   /* Header */
   header {
-    padding: 15px;
+    padding: 20px;
+  }
+  .header__logo-sub {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
   }
 
+  .hamburger-icon {
+    font-size: 30px;
+  }
   nav ul {
     gap: 8px;
   }
+
   .header__logo-img-cont,
   #contact-nav,
   #about-text-2,
@@ -469,22 +609,15 @@ section h2 {
     display: none;
   }
 
-section {
-  margin:2rem 1rem;
-}
-
-  /* About section */
-  /* #about {
-    padding: 0.5rem;
-  } */
+  section {
+    margin: 2rem 1rem;
+  }
 
   #about-title {
     font-size: 1.6rem;
   }
 
-  #about-text-1,
-  #about-text-2,
-  #about-text-3 {
+  #about-text-1 {
     font-size: 0.9rem;
   }
 
@@ -515,15 +648,14 @@ section {
   .project img {
     width: 100%;
     height: 150px;
-}
-
-
+  }
 
   #contact {
     display: none;
   }
 
-  .mobile-first, .mobile-first-nav {
+  .mobile-first,
+  .mobile-first-nav {
     display: flex;
   }
 
@@ -542,14 +674,14 @@ section {
   }
 
   #scroll-top-btn {
-    font-size: 1.3rem;
+    visibility: hidden;
   }
 
   .main-footer__lower,
   .main-footer .main-container {
     font-size: 0.9rem;
   }
-  
+
   .main-footer__icon {
     width: 2rem;
     height: 2rem;
@@ -560,37 +692,32 @@ section {
     padding: 1rem;
   }
 
-
-/* Carrusell o slider de Skill icons */
-.slider {
-  width: 100%;
-  overflow: hidden;
-}
-
-.slide-track {
-  display: flex;
-  gap: 50px;
-  width: max-content;
-  animation: scroll 30s linear infinite;
-}
-
-/* Estilo de los iconos */
-.slide-track img {
-  width: 50px;
-  height: auto;
-}
-
-/* Animación infinita*/
-@keyframes scroll {
-  from {
-    transform: translateX(0);
+  /* Carrusell o slider de Skill icons */
+  .slider {
+    width: 100%;
+    overflow: hidden;
   }
-  to {
-    transform: translateX(-50%);
+
+  .slide-track {
+    display: flex;
+    gap: 50px;
+    width: max-content;
+    animation: scroll 30s linear infinite;
   }
-}
 
+  /* Estilo de los iconos */
+  .slide-track img {
+    width: 50px;
+    height: auto;
+  }
 
-
-
+  /* Animación infinita*/
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
 }

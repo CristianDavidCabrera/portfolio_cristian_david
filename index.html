@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portafolio de Cristian Cabrera, desarrollador web fullstack con experiencia en Symfony, React y Prestashop.">
+    <meta
+      name="description"
+      content="Portafolio de Cristian Cabrera, desarrollador web fullstack con experiencia en Symfony, React y Prestashop."
+    />
     <title>Cristian's Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,20 +28,36 @@
         </div>
         <h1 class="header__logo-sub">Cristian David Cabrera</h1>
       </div>
-
       <nav>
         <ul>
+          <li><a href="#home" id="home-nav">Home</a></li>
           <li><a href="#about" id="about-nav">Sobre Mí</a></li>
           <li><a href="#projects" id="projects-nav">Proyectos</a></li>
           <li><a href="#contact" id="contact-nav">Contacto</a></li>
           <li><a href="#education-title" id="education-nav">Educación</a></li>
-          <li class="mobile-first-nav"><a href="#footer-lower-text" id="footer-nav">Contacto</a></li>
+          <li class="mobile-first-nav">
+            <a href="#footer-lower-text" id="footer-nav">Contacto</a>
+          </li>
           <li>
             <a href="#" id="toggle-language" class="header_btn">EN / ES</a>
           </li>
         </ul>
       </nav>
+
+      <div id="sidebar" class="sidebar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Sobre Mí</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#footer-lower-text">Contacto</a></li>
+          <li><a href="#education-title">Educación</a></li>
+        </ul>
+      </div>
+      <button id="sidebar-toggle" class="sidebar-toggle">
+        <span class="hamburger-icon">&#9776;</span>
+      </button>
     </header>
+
     <section id="about">
       <h2 id="about-title">Sobre Mí</h2>
       <p id="about-text-1">
@@ -98,7 +117,7 @@
       </div>
     </section>
 
-    <section >
+    <section>
       <h2 id="skill-title">Habilidades</h2>
       <div class="slider skills-section">
         <div class="slide-track">
@@ -149,10 +168,7 @@
         </div>
         <div class="project">
           <h3>Tic-tac-toe</h3>
-          <img
-            src="assets/images/tic_tac_toe.png"
-            alt="Tres en raya"
-          />
+          <img src="assets/images/tic_tac_toe.png" alt="Tres en raya" />
           <p id="project-description-2"><strong>Descripción</strong></p>
           <p id="project-description-text-2">
             Videojuego del famoso Tic-tac-toe (Tres en raya)
@@ -162,9 +178,9 @@
         </div>
         <div class="project">
           <h3>El Terrero</h3>
-          <img 
-            src="assets/images/el_terrero.png" 
-            alt="Imagen resultados de lucha canaria" 
+          <img
+            src="assets/images/el_terrero.png"
+            alt="Imagen resultados de lucha canaria"
           />
           <p id="project-description-3"><strong>Descripción</strong></p>
           <p id="project-description-text-3">
@@ -177,9 +193,9 @@
         </div>
         <div class="project">
           <h3>PharmacIA</h3>
-          <img 
-            src="assets/images/pharmacIA_.png" 
-            alt="e-commerce de una parafarmacia" 
+          <img
+            src="assets/images/pharmacIA_.png"
+            alt="e-commerce de una parafarmacia"
           />
           <p id="project-description-4"><strong>Descripción</strong></p>
           <p id="project-description-text-4">
@@ -197,7 +213,7 @@
         Estoy abierto a oportunidades laborales donde pueda contribuir, aprender
         y crecer. Si tienes una buena oportunidad que coincida con mis
         habilidades y experiencia, no dudes en contactarme.
-        <br>
+        <br />
         <a href="mailto:cristiancabrera.1985@gmail.com"
           >cristiancabrera.1985@gmail.com</a
         >
@@ -242,12 +258,13 @@
               la mejor actitud."
             </p>
           </div>
-        
+
           <div class="mobile-first">
             <span>E-mail: </span>
-            <a href="mailto:cristiancabrera.1985@gmail.com">cristiancabrera.1985@gmail.com</a>
+            <a href="mailto:cristiancabrera.1985@gmail.com"
+              >cristiancabrera.1985@gmail.com</a
+            >
           </div>
-         
         </div>
 
         <div id="footer-lower-text" class="main-footer__lower">
@@ -259,6 +276,7 @@
 
     <button id="scroll-top-btn" class="scroll-top-btn">↑</button>
 
+    <script src="assets/js/sidebarButton.js"></script>
     <script src="assets/js/scrollTop.js"></script>
     <!-- <script src="assets/js/darkmode.js"></script> -->
     <script src="assets/js/languages.js"></script>
