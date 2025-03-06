@@ -470,14 +470,13 @@ section h2 {
   }
 
 section {
-  margin:2rem 2rem;
-  padding: 2rem;
+  margin:2rem 1rem;
 }
 
   /* About section */
-  #about {
+  /* #about {
     padding: 0.5rem;
-  }
+  } */
 
   #about-title {
     font-size: 1.6rem;
@@ -560,4 +559,38 @@ section {
     margin: 1rem 2rem;
     padding: 1rem;
   }
+
+
+/* Carrusell o slider de Skill icons */
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slide-track {
+  display: flex;
+  gap: 50px;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+
+/* Estilo de los iconos */
+.slide-track img {
+  width: 50px;
+  height: auto;
+}
+
+/* Animación infinita*/
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+
 }
