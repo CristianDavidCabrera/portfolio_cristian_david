@@ -1,9 +1,23 @@
 const translations = {
   es: {
     "about-nav": "Sobre Mí",
+    "education-nav": "Educación",
+    "skill-nav": "Habilidades",
     "projects-nav": "Proyectos",
     "contact-nav": "Contacto",
-    "education-nav":"Educación",
+
+    "about-sidebar": "Sobre Mí",
+    "education-sidebar": "Educación",
+    "skill-sidebar": "Habilidades",
+    "projects-sidebar": "Proyectos",
+    "contact-sidebar": "Contacto",
+
+    "about-accordion": "Sobre Mí",
+    "education-accordion": "Educación",
+    "skill-accordion": "Habilidades",
+    "projects-accordion": "Proyectos",
+    "contact-accordion": "Contacto",
+
     "about-title": "Sobre Mí",
     "about-text-1":
       "Hola!! mi nombre es <strong>Cristian D. Cabrera</strong> y soy <em>Desarrollador Web Fullstack</em> y amante de la tecnología.",
@@ -53,9 +67,23 @@ const translations = {
   },
   en: {
     "about-nav": "About Me",
+    "education-nav": "Education",
+    "skill-nav": "Skills",
     "projects-nav": "Projects",
     "contact-nav": "Contact",
-    "education-nav":"Education",
+
+    "about-sidebar": "About Me",
+    "education-sidebar": "Education",
+    "skill-sidebar": "Skills",
+    "projects-sidebar": "Projects",
+    "contact-sidebar": "Contact",
+
+    "about-accordion": "About Me",
+    "education-accordion": "Education",
+    "skill-accordion": "Skills",
+    "projects-accordion": "Projects",
+    "contact-accordion": "Contact",
+
     "about-title": "About Me",
     "about-text-1":
       "Hello!! My name is <strong>Cristian D. Cabrera</strong> and I am a <em>Fullstack Web Developer</em> and a technology enthusiast.",
