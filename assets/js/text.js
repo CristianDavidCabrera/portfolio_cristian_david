@@ -1,8 +1,9 @@
 const translations = {
   es: {
-    "about-nav": "Sobre mi",
+    "about-nav": "Sobre Mí",
     "projects-nav": "Proyectos",
     "contact-nav": "Contacto",
+    "education-nav":"Educación",
     "about-title": "Sobre Mí",
     "about-text-1":
       "Hola!! mi nombre es <strong>Cristian D. Cabrera</strong> y soy <em>Desarrollador Web Fullstack</em> y amante de la tecnología.",
@@ -54,6 +55,7 @@ const translations = {
     "about-nav": "About Me",
     "projects-nav": "Projects",
     "contact-nav": "Contact",
+    "education-nav":"Education",
     "about-title": "About Me",
     "about-text-1":
       "Hello!! My name is <strong>Cristian D. Cabrera</strong> and I am a <em>Fullstack Web Developer</em> and a technology enthusiast.",
