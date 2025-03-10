@@ -59,7 +59,7 @@ const translations = {
     "project-tech-text-4": "MySQL, PHP con Symfony y Prestashop.",
     "contact-title": "Contacto",
     "contact-text":
-      "Estoy abierto a oportunidades laborales donde pueda contribuir, aprender y crecer. Si tienes una buena oportunidad que coincida con mis habilidades y experiencia, no dudes en contactarme.<br> <a href='mailto:cristiancabrera.1985@gmail.com'>cristiancabrera.1985@gmail.com</a>",
+      "Estoy abierto a oportunidades laborales donde pueda contribuir, aprender y crecer. Si tienes una buena oportunidad que coincida con mis habilidades y experiencia, no dudes en contactarme.<br> <a href='mailto:cristiancabrera.1985@gmail.com'> cristiancabrera.1985@gmail.com</a>",
     "footer-upper-text":
       "Profesional comprometido, desarrollador apasionado, siempre con la mejor actitud.",
     "footer-lower-text":
@@ -125,7 +125,7 @@ const translations = {
     "project-tech-text-4": "MySQL, PHP with Symfony, and Prestashop.",
     "contact-title": "Contact",
     "contact-text":
-      "I am open to job opportunities where I can contribute, learn, and grow. If you have a great opportunity that matches my skills and experience, don't hesitate to contact me. <br><a href='mailto:cristiancabrera.1985@gmail.com'>cristiancabrera.1985@gmail.com</a>",
+      "I am open to job opportunities where I can contribute, learn, and grow. If you have a great opportunity that matches my skills and experience, don't hesitate to contact me. <br><a href='mailto:cristiancabrera.1985@gmail.com'> cristiancabrera.1985@gmail.com</a>",
     "footer-upper-text":
       "Committed professional, passionate developer, always with the best attitude.",
     "footer-lower-text":
