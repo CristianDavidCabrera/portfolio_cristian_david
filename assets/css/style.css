@@ -217,6 +217,24 @@ section h2 {
 
 /* Sección habilidades */
 
+#skill-text {
+  margin: 5rem auto;
+  width: 60%;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+#skill-text strong {
+  background-color: #575F6D;
+  color: #ffffff;
+  display: inline-block;
+  padding: 5px 10px;
+  line-height: 0.9em;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 #skill-title {
   text-align: center;
   color: white;
@@ -605,6 +623,12 @@ section h2 {
     font-size: 1.2rem;
   }
 
+  #skill-text,
+  #skill-text strong {
+    font-size: 1.2rem;
+  }
+
+
   /* Footer */
   footer.main-footer {
     padding: 20px;
@@ -868,5 +892,9 @@ section h2 {
 
   .hidden-item {
     display: none;
+  }
+
+  #skill-text {
+    font-size: 1.2rem;
   }
 }
