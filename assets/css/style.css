@@ -78,7 +78,7 @@ nav ul li a:hover {
   color: orange;
 }
 
-/* Estilos para el sidebar y el botón de hamburguesa */
+/* Estilos para el sidebar y el burger button */
 
 /* Estilos del sidebar */
 .sidebar {
@@ -88,7 +88,6 @@ nav ul li a:hover {
   width: 250px;
   height: 100%;
   background-color: #333;
-  /*   background-color: #2c3e50; */
   transition: left 0.3s ease;
   padding-top: 50px;
   z-index: 10;
@@ -278,6 +277,10 @@ section h2 {
 }
 
 .project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   --tw-bg-opacity: 0.5;
   --tw-text-opacity: 1;
   color: rgb(15 23 42 / var(--tw-text-opacity));
@@ -286,6 +289,7 @@ section h2 {
   border: solid 1px white;
   border-radius: 10px;
   width: 18rem;
+  height: 28rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
@@ -300,6 +304,43 @@ section h2 {
   height: 150px;
   object-fit: cover;
   border: 2px solid #ecf0f1;
+  border-radius: 5px;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  flex: 1;
+  margin: 0 5px;
+}
+
+.github {
+  background-color: #efefef;
+  color: black;
+}
+
+.github:hover {
+  background-color: #555;
+}
+
+.demo {
+  background-color: orange;
+  color: black;
+}
+
+.demo:hover {
+  background-color: yellow;
 }
 
 /* Estilo de contacto */
@@ -673,6 +714,7 @@ section h2 {
 
   .hamburger-icon {
     visibility: visible;
+    font-size: 1.6rem;
   }
   nav ul {
     gap: 8px;

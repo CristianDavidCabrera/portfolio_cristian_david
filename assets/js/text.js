@@ -42,7 +42,7 @@ const translations = {
     "project-description-text-1":
       "Videojuego de naves tipo Space Invaders o Galaga.",
     "project-tech-1": "<strong>Tecnologías</strong>",
-    "project-tech-text-1": "JavaScript Vanila, CSS3, HTML5.",
+    "project-tech-text-1": "JavaScript Vanilla, CSS3, HTML5.",
     "project-description-2": "<strong>Descripción</strong>",
     "project-description-text-2": "Videojuego del famoso Tres en raya",
     "project-tech-2": "<strong>Tecnologías</strong>",
