@@ -5,29 +5,37 @@ function changeLanguage(lang) {
       element.innerHTML = translations[lang][key];
     }
   });
+  document.documentElement.lang = lang;
 }
 
+//Para DESKTOP
+
 document
-  .getElementById("toggle-language")
-  .addEventListener("click", function () {
-    let currentLang = document.documentElement.lang === "es" ? "en" : "es";
-    document.documentElement.lang = currentLang;
-    changeLanguage(currentLang);
+  .getElementById("toggle-language-es")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    changeLanguage("es");
   });
 
-
-  document
-  .getElementById("toggle-language-tablet")
-  .addEventListener("click", function () {
-    let currentLangTablet = document.documentElement.lang === "es" ? "en" : "es";
-    document.documentElement.lang = currentLangTablet;
-    changeLanguage(currentLangTablet);
+document
+  .getElementById("toggle-language-en")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    changeLanguage("en");
   });
 
-  document
-  .getElementById("toggle-language-mobil")
-  .addEventListener("click", function () {
-    let currentLangMobil = document.documentElement.lang === "es" ? "en" : "es";
-    document.documentElement.lang = currentLangMobil;
-    changeLanguage(currentLangMobil);
+//Para el sidebar del movil y la tablet
+
+document
+  .getElementById("toggle-language-tablet-es")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    changeLanguage("es");
+  });
+
+document
+  .getElementById("toggle-language-tablet-en")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    changeLanguage("en");
   });

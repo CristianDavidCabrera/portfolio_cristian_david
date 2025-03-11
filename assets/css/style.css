@@ -77,6 +77,23 @@ nav ul li a {
 nav ul li a:hover {
   color: orange;
 }
+/* Esilos para las banderas */
+.language-switcher {
+  display: flex;
+  gap: 1rem; /* Espaciado entre las banderas */
+  align-items: center;
+}
+
+.language-switcher a {
+  display: flex;
+  align-items: center;
+}
+
+.language-switcher img {
+  width: 24px;
+  height: 16px;
+  cursor: pointer;
+}
 
 /* Estilos para el sidebar y el burger button */
 
@@ -225,7 +242,7 @@ section h2 {
 }
 
 #skill-text strong {
-  background-color: #575F6D;
+  background-color: #575f6d;
   color: #ffffff;
   display: inline-block;
   padding: 5px 10px;
@@ -483,60 +500,6 @@ section h2 {
   color: black;
 }
 
-/* Oculta el acordeón en tablets y escritorio */
-@media (min-width: 768px) {
-  .accordion-menu {
-    display: none;
-  }
-}
-
-.accordion-menu {
-  width: 100%;
-  background-color: #333;
-  color: white;
-  text-align: center;
-  position: relative;
-}
-
-.accordion-toggle {
-  --tw-bg-opacity: 1;
-  color: rgb(15 23 42 / var(--tw-bg-opacity));
-  padding: 10px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  cursor: pointer;
-  font-size: 18px;
-}
-
-.accordion-content {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: none;
-  --tw-bg-opacity: 1;
-  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(148 163 184 / var(--tw-text-opacity));
-}
-
-.accordion-content li {
-  padding: 10px;
-  border-bottom: 1px solid #666;
-}
-
-.accordion-content li a {
-  --tw-text-opacity: 1;
-  color: rgb(148 163 184 / var(--tw-text-opacity));
-  text-decoration: none;
-  display: block;
-}
-
-.accordion-menu button {
-  display: flex;
-  justify-content: center;
-}
-
 /* ------------------------------------ */
 /*              TABLET                  */
 /* ------------------------------------ */
@@ -551,6 +514,12 @@ section h2 {
   nav ul {
     flex-direction: column;
     gap: 10px;
+    align-items: center;
+  }
+
+  .language-switcher {
+    display: flex;
+    gap: 0.1rem;
     align-items: center;
   }
 
@@ -627,7 +596,6 @@ section h2 {
   #skill-text strong {
     font-size: 1.2rem;
   }
-
 
   /* Footer */
   footer.main-footer {
@@ -742,6 +710,12 @@ section h2 {
   }
   nav ul {
     gap: 8px;
+  }
+
+  .language-switcher {
+    display: flex;
+    gap: 0.1rem;
+    align-items: center;
   }
 
   .header__logo-img-cont,
@@ -865,10 +839,6 @@ section h2 {
     to {
       transform: translateX(-50%);
     }
-  }
-
-  .accordion-menu {
-    display: none;
   }
 
   .sidebar-toggle {
