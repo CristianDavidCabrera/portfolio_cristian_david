@@ -687,6 +687,24 @@ section h2 {
       transform: translateX(-50%);
     }
   }
+
+  .education-item {
+    text-align: center;
+    width: 100px;
+  }
+
+  .education-item img {
+    width: 100px;
+    height: 100px;
+    max-width: 150px;
+    margin-bottom: 1rem;
+  }
+
+  .education-item p {
+    margin: 0.5rem 0;
+    font-size: 0.8rem;
+    overflow: scroll;
+  }
 }
 
 /* ------------------------------------ */
@@ -866,5 +884,31 @@ section h2 {
 
   #skill-text {
     font-size: 1.2rem;
+  }
+
+  .education-item {
+    text-align: center;
+    width: 100px;
+    margin-bottom: 0;
+  }
+
+  .education-item img {
+    width: 100px;
+    height: 100px;
+    max-width: 150px;
+    margin-bottom: 0;
+  }
+
+  .education-item p {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+
+  #education-description-1,
+  #education-description-2,
+  #education-description-3,
+  #education-description-4,
+  #education-description-5 {
+    display: none;
   }
 }
