@@ -84,7 +84,7 @@ nav ul li a:hover {
 /* Esilos para las banderas */
 .language-switcher {
   display: flex;
-  gap: 1rem; /* Espaciado entre las banderas */
+  gap: 1rem;
   align-items: center;
 }
 
@@ -115,7 +115,6 @@ nav ul li a:hover {
 }
 
 #sidebar.open {
-  /* left: 50px; */
   left: 0;
 }
 
@@ -157,6 +156,7 @@ nav ul li a:hover {
 }
 
 /* Estilo de las secciones */
+
 section {
   margin: 8rem 4rem;
   padding: 20px;
@@ -201,6 +201,7 @@ section h2 {
   color: yellow;
   opacity: 1;
 }
+
 /* Seccion de Educación */
 
 #education-title {
@@ -266,7 +267,6 @@ section h2 {
   line-height: 0.9em;
   font-size: 1.4rem;
   border-radius: 5px;
-  cursor: pointer;
 }
 
 .skills-section {
@@ -330,20 +330,18 @@ section h2 {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  --tw-bg-opacity: 0.5;
-  --tw-text-opacity: 1;
   color: rgb(15 23 42);
-  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
   padding: 1rem;
   border: solid 1px white;
   border-radius: 10px;
+  min-height: 500px;
   width: 22rem;
   height: 28rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
+  background: linear-gradient(45deg, rgb(15, 23, 42) 0%,rgb(44, 62, 80) 50% ,rgb(15, 23, 42) 100%);   
 }
-
 .project:hover {
   transform: translateY(-10px);
 }
@@ -366,13 +364,16 @@ section h2 {
 #project-description-text-4,
 #project-tech-text-4 {
   color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1rem;
 }
 
 .project p strong {
   font-size: larger;
+  color: rgba(255, 255, 255, 0.8);
 }
 .project h3 {
-  font-size: larger;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.4rem;
   font-weight: bolder;
 }
 
@@ -702,13 +703,31 @@ section h2 {
     width: 18rem;
   }
 
-  .project h3 {
-    font-size: 1.5rem;
-  }
-
   .project img {
     width: 100%;
     height: 150px;
+  }
+
+  #project-description-text-1,
+  #project-tech-text-1,
+  #project-description-text-2,
+  #project-tech-text-2,
+  #project-description-text-3,
+  #project-tech-text-3,
+  #project-description-text-4,
+  #project-tech-text-4 {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1rem;
+  }
+
+  .project p strong {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .project h3 {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.4rem;
+    font-weight: bolder;
   }
 
   #contact-text {
@@ -847,15 +866,34 @@ section h2 {
   .project {
     padding: 10px;
     margin-top: 1rem;
-  }
-
-  .project h3 {
-    font-size: 1.3rem;
+    min-height: 450px;
   }
 
   .project img {
     width: 100%;
     height: 150px;
+  }
+
+  #project-description-text-1,
+  #project-tech-text-1,
+  #project-description-text-2,
+  #project-tech-text-2,
+  #project-description-text-3,
+  #project-tech-text-3,
+  #project-description-text-4,
+  #project-tech-text-4 {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0.4rem;
+  }
+
+  .project p strong {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .project h3 {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2rem;
+    font-weight: bolder;
   }
 
   /* Carrusell o slider de Skill icons */
@@ -934,7 +972,7 @@ section h2 {
   #scroll-top-btn {
     visibility: hidden;
   }
-  
+
   /* Footer */
   .main-footer__short-desc {
     font-size: 1rem;
@@ -951,7 +989,7 @@ section h2 {
   }
 
   .main-footer__row-1 {
-   /*  margin: 1rem 2rem; */
+    /*  margin: 1rem 2rem; */
     padding: 1rem;
   }
 }
