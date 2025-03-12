@@ -337,7 +337,7 @@ section h2 {
   min-height: 500px;
   max-height: 600px;
   width: 22rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.9);
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
   background: linear-gradient(45deg, rgb(15, 23, 42) 0%,rgb(44, 62, 80) 50% ,rgb(15, 23, 42) 100%);   
