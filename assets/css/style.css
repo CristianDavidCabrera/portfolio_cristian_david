@@ -775,8 +775,16 @@ section h2 {
 @media only screen and (max-width: 480px) {
   /* Header */
   header {
+    position: sticky;
+    top: 0;
+    width: 100%;
     padding: 20px;
+    background: linear-gradient(45deg, rgb(15, 23, 42) 0%,rgb(44, 62, 80) 50% ,rgb(15, 23, 42) 100%);  
+    opacity: 0.9;
+    z-index: 100; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
+
   .header__logo-sub {
     font-size: 1.2rem;
     font-weight: bold;
