@@ -1,0 +1,248 @@
+/* ------------------------------------ */
+/*              MOBILE                  */
+/* ------------------------------------ */
+
+@media only screen and (max-width: 480px) {
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      padding: 20px;
+      background: linear-gradient(
+        45deg,
+        rgba(15, 23, 42, 0.9) 0%,
+        rgba(44, 62, 80, 0.9) 50%,
+        rgba(15, 23, 42, 0.9) 100%
+      );
+      z-index: 100;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  
+    #sidebar {
+      background-color: rgba(51, 51, 51, 1);
+    }
+  
+    .header__logo-sub {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white;
+    }
+  
+    .hamburger-icon {
+      visibility: visible;
+      font-size: 1.6rem;
+    }
+    nav ul {
+      gap: 8px;
+    }
+  
+    .language-switcher {
+      display: flex;
+      gap: 0.1rem;
+      align-items: center;
+    }
+  
+    .header__logo-img-cont,
+    #contact-nav,
+    #about-text-2,
+    #about-text-3 {
+      display: none;
+    }
+  
+    main {
+      width: 100%;
+    }
+  
+    section {
+      margin: 2rem 1rem;
+    }
+  
+    section h2 {
+      font-size: 1.8rem;
+    }
+    #about-title {
+      font-size: 1.8rem;
+      padding: 0rem 1rem;
+    }
+  
+    #about-text-1 {
+      font-size: 0.9rem;
+    }
+  
+    #about p strong:hover {
+      font-size: 1.2rem;
+    }
+  
+    /* Education section */
+    #about-title,
+    #education-title,
+    #skill-title,
+    #projects-title,
+    #contact-title {
+      border: 1px solid white;
+    }
+  
+    .education-container {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  
+    .education-item {
+      text-align: center;
+      width: 100px;
+      margin-bottom: 0;
+    }
+  
+    .education-item img {
+      width: 80px;
+      height: 80px;
+      max-width: 150px;
+      margin-bottom: 1rem;
+    }
+  
+    .education-item p {
+      margin: 0;
+      font-size: 0.8rem;
+    }
+  
+    #education-description-1,
+    #education-description-2,
+    #education-description-3,
+    #education-description-4,
+    #education-description-5 {
+      font-size: 0.8rem;
+    }
+  
+    /* Projects section */
+    .project {
+      padding: 10px;
+      margin-top: 1rem;
+      min-height: 450px;
+    }
+  
+    .project img {
+      width: 100%;
+      height: 150px;
+    }
+  
+    #project-description-text-1,
+    #project-tech-text-1,
+    #project-description-text-2,
+    #project-tech-text-2,
+    #project-description-text-3,
+    #project-tech-text-3,
+    #project-description-text-4,
+    #project-tech-text-4 {
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 0.4rem;
+    }
+  
+    .project p strong {
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    .project h3 {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 1.2rem;
+      font-weight: bolder;
+    }
+  
+    /* Carrusell o slider de Skill icons */
+    .slider {
+      width: 100%;
+      overflow: hidden;
+    }
+  
+    .slide-track {
+      display: flex;
+      gap: 50px;
+      width: max-content;
+      animation: scroll 30s linear infinite;
+    }
+  
+    /* Estilo de los iconos */
+    .slide-track img {
+      width: 50px;
+      height: auto;
+    }
+  
+    /* Animación infinita*/
+    @keyframes scroll {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-50%);
+      }
+    }
+  
+    .sidebar-toggle {
+      display: block;
+      position: absolute;
+      top: auto;
+      right: 20px;
+      background: transparent;
+      border: none;
+      color: white;
+      font-size: 30px;
+      cursor: pointer;
+    }
+  
+    #sidebar-icon {
+      top: 20px;
+      right: 20px;
+    }
+  
+    .hidden-item {
+      display: none;
+    }
+  
+    #skill-text {
+      font-size: 1.2rem;
+    }
+  
+    #contact {
+      display: none;
+    }
+  
+    .mobile-first,
+    .mobile-first-nav {
+      display: flex;
+    }
+  
+    .mobile-first a {
+      display: flex;
+      color: #3498db;
+      text-decoration: none;
+    }
+  
+    .mobile-first a:hover {
+      color: orange;
+    }
+  
+    #scroll-top-btn {
+      visibility: hidden;
+    }
+  
+    /* Footer */
+    .main-footer__short-desc {
+      font-size: 1rem;
+    }
+  
+    .main-footer__lower,
+    .main-footer .main-container {
+      font-size: 0.9rem;
+    }
+  
+    .main-footer__icon {
+      width: 2rem;
+      height: 2rem;
+    }
+  
+    .main-footer__row-1 {
+      /*  margin: 1rem 2rem; */
+      padding: 1rem;
+    }
+  }
+  
