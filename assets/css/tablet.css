@@ -2,7 +2,7 @@
 /*              TABLET                  */
 /* ------------------------------------ */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   /* Header */
   header {
     flex-direction: column;
@@ -233,11 +233,59 @@
 /* ------------------------------------ */
 /*              TABLET - HORIZONTAL     */
 /* ------------------------------------ */
-@media only screen and (max-width: 768px) and (orientation: landscape) {
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  header {
+    flex-direction: row; 
+    justify-content: left;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  nav ul {
+    flex-direction: row; 
+    gap: 15px;
+  }
+
+  .header__logo-sub {
+    font-size: 1rem;
+  }
+
+  /* Sidebar */
+  #sidebar {
+    display: block;
+    max-height: 100vh;
+    overflow-y: auto;
+    padding: 1rem;
+  }
+
+  .sidebar-toggle {
+    display: block;
+  }
+
   .sidebar {
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     white-space: nowrap;
     margin-bottom: 1rem;
+  }
+
+  .sidebar-content {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 1440px) and (orientation: landscape) {
+  .header__logo-sub {
+    font-size: 1rem;
+  }
+  header {
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  nav ul {
+    flex-direction: row; 
+    gap: 15px;
   }
 }

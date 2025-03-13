@@ -249,23 +249,21 @@
 /* ------------------------------------ */
 /*              MOBILE - HORIZONTAL     */
 /* ------------------------------------ */
-@media only screen and (max-width: 480px) and (orientation: landscape) {
-  /* Ajustes para el modo horizontal */
 
-  /* Header */
-  header {
-    flex-direction: column;
-    padding: 15px;
-    width: 100%;
+@media only screen and (max-width: 480px) and (orientation: landscape) {
+  body {
+    overflow-x: hidden;
   }
 
-  /* Projects section */
   .project {
     min-height: 300px;
+    padding: 10px;
+    box-sizing: border-box;
   }
 
   .project img {
     width: 80%;
+    height: auto;
   }
 
   .education-container {
@@ -273,39 +271,100 @@
     gap: 1rem;
   }
 
-  .hamburger-icon {
-    font-size: 1.4rem;
-  }
-
-  nav ul {
-    flex-direction: row;
-  }
-
-  #sidebar {
-    display: block;
-  }
-
-  .header__logo-sub {
-    font-size: 1.4rem;
-  }
-
   /* Sidebar */
   #sidebar {
+    display: block;
     max-height: 100vh;
     overflow-y: auto;
+    padding: 1rem;
   }
 
   .sidebar-toggle {
     display: block;
   }
 
-  #sidebar {
-    padding: 1rem;
+  .sidebar {
     overflow-y: auto;
-    height: 100%;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    margin-bottom: 1rem;
   }
 
   .sidebar-content {
     height: auto;
+  }
+
+  /* Carrusell o slider de Skill icons */
+  .slider {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .slide-track {
+    display: flex;
+    gap: 50px;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+  }
+
+  .slide-track img {
+    width: 50px;
+    height: auto;
+  }
+
+  /* Animación infinita */
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .main-footer__short-desc {
+    font-size: 1rem;
+  }
+
+  .main-footer__lower,
+  .main-footer .main-container {
+    font-size: 0.9rem;
+  }
+
+  .main-footer__icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .main-footer__row-1 {
+    padding: 1rem;
+  }
+
+  #scroll-top-btn {
+    visibility: hidden;
+  }
+
+  .mobile-first,
+  .mobile-first-nav {
+    display: flex;
+  }
+
+  .mobile-first a {
+    display: flex;
+    color: #3498db;
+    text-decoration: none;
+  }
+
+  .mobile-first a:hover {
+    color: orange;
+  }
+
+  /* Ajuste de la visibilidad en los elementos */
+  #contact {
+    display: none;
+  }
+
+  .hidden-item {
+    display: none;
   }
 }
