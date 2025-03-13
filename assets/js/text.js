@@ -38,7 +38,7 @@ const translations = {
     "education-description-5": "Cisco Certified Network Associate",
     "skill-title": "Habilidades",
     "skill-text":
-    "Tengo conocimientos técnicos de <strong>HTML</strong>, <strong>CSS</strong>, <strong>MySQL</strong>, <strong>PHP</strong>, <strong> Symfony</strong>, <strong>React</strong>, <strong> Tailwind</strong>,<strong> PrestaShop</strong>,<strong> WordPress</strong>,<strong> WooCommerce</strong>,<strong> Magento,</strong> <strong>Git</strong> y otros.",
+    "Tengo conocimientos técnicos de <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>MySQL</strong>, <strong>PHP</strong>, <strong> Symfony</strong>, <strong>React</strong>, <strong>Tailwind</strong>, <strong>PrestaShop</strong>, <strong>WordPress</strong>, <strong>WooCommerce</strong>, <strong>Magento</strong>, <strong>Git</strong> y otros.",
     "projects-title": "Proyectos",
     "project-description-1": "<strong>Descripción</strong>",
     "project-description-text-1":
@@ -106,7 +106,7 @@ const translations = {
     "education-description-5": "Cisco Certified Network Associate",
     "skill-title": "Skills",
     "skill-text":
-      "I have technical knowledge of <strong>HTML</strong>, <strong>CSS</strong>, <strong>MySQL</strong>, <strong>PHP</strong>, <strong> Symfony</strong>, <strong>React</strong>, <strong> Tailwind</strong>,<strong> PrestaShop</strong>,<strong> WordPress</strong>,<strong> WooCommerce</strong>,<strong> Magento,</strong> <strong>Git</strong> and others.",
+      "I have technical knowledge of <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>MySQL</strong>, <strong>PHP</strong>, <strong> Symfony</strong>, <strong>React</strong>, <strong>Tailwind</strong>, <strong>PrestaShop</strong>, <strong>WordPress</strong>, <strong>WooCommerce</strong>, <strong>Magento</strong>, <strong>Git</strong> and others.",
     "projects-title": "Projects",
     "project-description-1": "<strong>Description</strong>",
     "project-description-text-1":
