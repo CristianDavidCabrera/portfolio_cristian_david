@@ -364,7 +364,7 @@
             <h2>
               <span>Social Media</span>
             </h2>
-            <div class="main-footer__social-cont">
+            <div class="main-footer__social-cont" id="downloadCV">
               <a
                 href="https://github.com/CristianDavidCabrera"
                 rel="noreferrer"
@@ -389,12 +389,13 @@
               </a>
 
               <a
-                href="assets/files/CV_Cristian_David.pdf"
-                rel="noreferrer"
-                target="_blank"
-                download="CV_Cristian_David.pdf"
+                id="cv-download"
+                class="download-btn"
+                href="assets/files/CV_Cristian_David_ES.pdf"
+                download
               >
                 <img
+                  id="iconCV"
                   class="main-footer__icon"
                   src="assets/icons/social_media/cv.png"
                   alt="Cristian David Curriculum Vitae"
@@ -426,6 +427,7 @@
     </footer>
 
     <button id="scroll-top-btn" class="scroll-top-btn">↑</button>
+    <script src="assets/js/switchCV.js"></script>
     <script src="assets/js/sidebarButton.js"></script>
     <script src="assets/js/scrollTop.js"></script>
     <script src="assets/js/languages.js"></script>
