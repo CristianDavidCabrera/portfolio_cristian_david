@@ -8,34 +8,19 @@ function changeLanguage(lang) {
   document.documentElement.lang = lang;
 }
 
-//Para DESKTOP
+const languageButtons = [
+  "toggle-language-es",
+  "toggle-language-en",
+  "toggle-language-tablet-es",
+  "toggle-language-tablet-en",
+];
 
-document
-  .getElementById("toggle-language-es")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-    changeLanguage("es");
-  });
-
-document
-  .getElementById("toggle-language-en")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-    changeLanguage("en");
-  });
-
-//Para el sidebar del movil y la tablet
-
-document
-  .getElementById("toggle-language-tablet-es")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-    changeLanguage("es");
-  });
-
-document
-  .getElementById("toggle-language-tablet-en")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-    changeLanguage("en");
-  });
+languageButtons.forEach((id) => {
+  const button = document.getElementById(id);
+  if (button) {
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
+      changeLanguage(id.includes("-es") ? "es" : "en");
+    });
+  }
+});
