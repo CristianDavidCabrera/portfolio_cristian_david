@@ -1,46 +1,28 @@
 document.addEventListener("DOMContentLoaded", function () {
   const cvDownloadBtn = document.getElementById("cv-download");
   let currentLanguage = "es";
+  const languageToggles = [
+    "toggle-language-es", "toggle-language-en",
+    "toggle-language-tablet-es", "toggle-language-tablet-en"
+  ];
 
   function updateCvLink() {
-    const cvPath =
-      currentLanguage === "es"
-        ? "assets/files/CV_Cristian_David_ES.pdf"
-        : "assets/files/CV_Cristian_David_EN.pdf";
+    const cvPath = `assets/files/CV_Cristian_David_${currentLanguage.toUpperCase()}.pdf`;
     cvDownloadBtn.setAttribute("href", cvPath);
   }
 
-  document
-    .getElementById("toggle-language-es")
-    .addEventListener("click", function (e) {
-      e.preventDefault();
-      currentLanguage = "es";
+  function setLanguage(lang) {
+    return function (event) {
+      event.preventDefault();
+      currentLanguage = lang;
       updateCvLink();
-    });
+    };
+  }
 
-  document
-    .getElementById("toggle-language-en")
-    .addEventListener("click", function (e) {
-      e.preventDefault();
-      currentLanguage = "en";
-      updateCvLink();
-    });
-
-  document
-    .getElementById("toggle-language-tablet-es")
-    .addEventListener("click", function (e) {
-      e.preventDefault();
-      currentLanguage = "es";
-      updateCvLink();
-    });
-
-  document
-    .getElementById("toggle-language-tablet-en")
-    .addEventListener("click", function (e) {
-      e.preventDefault();
-      currentLanguage = "en";
-      updateCvLink();
-    });
+  languageToggles.forEach(id => {
+    const lang = id.includes("-en") ? "en" : "es";
+    document.getElementById(id)?.addEventListener("click", setLanguage(lang));
+  });
 
   updateCvLink();
 });
