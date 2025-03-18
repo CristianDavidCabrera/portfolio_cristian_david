@@ -26,5 +26,21 @@ document.addEventListener("DOMContentLoaded", function () {
       updateCvLink();
     });
 
+  document
+    .getElementById("toggle-language-tablet-es")
+    .addEventListener("click", function (e) {
+      e.preventDefault();
+      currentLanguage = "es";
+      updateCvLink();
+    });
+
+  document
+    .getElementById("toggle-language-tablet-en")
+    .addEventListener("click", function (e) {
+      e.preventDefault();
+      currentLanguage = "en";
+      updateCvLink();
+    });
+
   updateCvLink();
 });
