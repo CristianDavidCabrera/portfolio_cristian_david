@@ -20,7 +20,7 @@ const translations = {
 
     "about-title": "Sobre Mí",
     "about-text-1":
-      "Hola!! mi nombre es <strong>Cristian D. Cabrera</strong> y soy <em>Desarrollador Web Fullstack</em> y amante de la tecnología.",
+      "Hola!! Mi nombre es <strong>Cristian D. Cabrera</strong> y soy <em>Desarrollador Web Fullstack</em> y amante de la tecnología.",
     "about-text-2":
       "Soy una persona autosuficiente, responsable y comprometida que valora profundamente el trabajo en equipo y un ambiente laboral positivo.",
     "about-text-3":
