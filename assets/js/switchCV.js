@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
 
   function updateCvLink() {
-    const cvPath = `assets/files/CV_Cristian_David_${currentLanguage.toUpperCase()}.pdf`;
+    const cvPath = `assets/files/CV_Cristian_Cabrera_DEV_${currentLanguage.toUpperCase()}.pdf`;
     cvDownloadBtn.setAttribute("href", cvPath);
   }
 
