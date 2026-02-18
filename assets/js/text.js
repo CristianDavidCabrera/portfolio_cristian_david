@@ -18,13 +18,10 @@ const translations = {
     "projects-accordion": "Proyectos",
     "contact-accordion": "Contacto",
 
-    "about-title": "Sobre Mí",
-    "about-text-1":
-      "Hola!! Mi nombre es <strong>Cristian D. Cabrera</strong> y soy <em>Desarrollador Web Fullstack</em> y amante de la tecnología.",
-    "about-text-2":
-      "Soy una persona autosuficiente, responsable y comprometida que valora profundamente el trabajo en equipo y un ambiente laboral positivo.",
-    "about-text-3":
-      "Siempre estoy buscando la manera de mejorar y de aprender cosas nuevas. Abordando cada desafío profesional con una actitud positiva, proactiva y resolutiva.",
+    "about-title":"Sobre Mí",
+    "about-text-1":"Mi nombre es <strong>Cristian D. Cabrera</strong> y soy <em>Desarrollador Web Fullstack</em> con background en Ingeniería de Telecomunicaciones y experiencia práctica en el desarrollo de aplicaciones web y proyectos e-commerce.",
+    "about-text-2":"Trabajo con tecnologías como JavaScript, PHP, Symfony, MySQL y Tailwind CSS.",
+    "about-text-3":"Mi experiencia previa en entornos críticos de seguridad y testing me ha permitido desarrollar una fuerte capacidad de resolución de problemas y adaptación a sistemas complejos.",    
     "education-title": "Educación",
     "education-text-1": "ULPGC",
     "education-description-1": "Ingeniería Técnica en Telecomunicaciones",
@@ -87,12 +84,10 @@ const translations = {
     "contact-accordion": "Contact",
 
     "about-title": "About Me",
-    "about-text-1":
-      "Hello!! My name is <strong>Cristian D. Cabrera</strong> and I am a <em>Fullstack Web Developer</em> and a technology enthusiast.",
-    "about-text-2":
-      "I am a self-sufficient, responsible, and committed person who deeply values teamwork and a positive work environment.",
-    "about-text-3":
-      "I am always looking for ways to improve and learn new things. Approaching each professional challenge with a positive, proactive and decisive attitude.",
+    "about-title": "About Me",
+    "about-text-1": "My name is <strong>Cristian D. Cabrera</strong> and I am a <em>Full-Stack Web Developer</em> with a background in Telecommunications Engineering and hands-on experience developing web applications and e-commerce projects.",
+    "about-text-2": "I work with technologies including JavaScript, PHP, Symfony, MySQL, and Tailwind CSS.",
+    "about-text-3": "My experience in critical security environments and QA testing has strengthened my analytical mindset, problem-solving skills, and ability to work with complex systems.",
     "education-title": "Education",
     "education-text-1": "ULPGC",
     "education-description-1": "Technical Engineering in Telecommunications",
